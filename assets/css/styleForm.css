@@ -1,0 +1,264 @@
+*{ margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family:"robot";
+} 
+input[type=number] { -moz-appearance:textfield; }
+.grilla{
+    background:white;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+ margin-right:150px;
+    margin-left: 150px;
+   column-gap: 3.2em;
+   /*ALTO DE LA FILA*/
+   grid-template-rows: 210px 178px;
+}
+div{
+    background-color: #ececec ;
+    padding:2em;
+    
+
+}
+.menu{
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    
+}
+.menu-sub{
+    background-color:#FFFFFF;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    border: 1px solid #DEE1E6;
+}
+
+#btn_1{  
+    background-color: white;
+    padding:12px 20px 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:black;
+    border:1px solid black;
+}
+#btn_1:hover{
+    background-color: black;
+    color:white;
+}
+
+
+.define{
+   text-align: center;
+   margin-bottom:5px;
+    }
+
+
+.fas , .fa-start{
+color: red;
+margin-left: -5px;
+}
+.space{margin-bottom: 30px;}
+span{text-decoration: line-through;}
+
+@font-face {
+    font-family:"robot";
+    src: url("../fonts/roboto.thin.ttf");
+}
+img{
+    margin-top:-20px;
+}
+
+.car{
+    margin: 50px 180px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+  
+}
+
+.flex-item{
+  color:rgb(41, 41, 41);
+  
+}
+
+.content-car{
+    background: white;
+}
+.content-car:hover{
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+
+
+
+#close {
+    width: 80px;
+    height: 20px;
+    background: rgb(16, 219, 60);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    overflow: auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.modalContent {
+    background: rgb(0, 47, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    animation: formDown .5s;
+}
+
+/*Ventana del Envio*/
+
+.modal2 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    overflow: auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.modalContent2 {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 50%;
+    animation: formDown .5s;
+    border-radius: 10px;
+}
+
+#wrapper{
+    background-color: white;
+    color:rgb(31, 31, 31);
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.content-wrapper{
+margin-left: -20px;
+background:white;
+
+}
+#close2{
+    color:rgb(92, 92, 92);
+    display: inline;
+    cursor: pointer;
+}
+h3{
+   display: inline;
+    color:rgb(94, 94, 94);
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: lighter;
+} 
+
+
+
+input{
+   margin-top: 5px;
+   border:solid 1px rgb(145, 145, 145);
+   width: 300px;
+   height: 30px;
+}
+textarea{
+    padding: 10px 10px ;
+    margin-top:5px;
+    border:solid 1px rgb(145, 145, 145);  
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgb(151, 195, 252);
+}
+button{
+    color:black;
+    margin-top:-40px;
+   border:solid 1px black;
+   padding: 12px 35px;
+   background: white;
+   border-radius: 10px;
+   font-size: 15px;
+   font-family: "robot";
+}
+button:hover{
+  background-color: black;
+  color: white; 
+}
+#guardar{
+    width:100%;
+    background: rgb(22, 22, 22);
+    color:white;
+    margin-top: 56px;
+    cursor: pointer;
+}
+select{
+    margin-top:5px;
+    border:solid 1px rgb(145, 145, 145);
+    width: 100%;
+    background: white;
+    height: 30px;
+}
+#mostrar{  
+    background: white;
+    margin-left: 185px;
+    width:5%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.grid_dos{
+    background: white;
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.items{
+    background: white;
+}
+ #msg_posit{
+   position:absolute;
+   width: 54%;  
+   padding: 12px 1px;
+   margin-left:349px;
+   text-align: center;
+   word-spacing: 2px;
+ }
+
+ #eye{
+     margin-left: -15px;
+     
+ }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styleForm.css">
+</head>
+
+<body>
+    <div>
+        <a href="index.html"> Volver a inicio </a>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <div id="close">cierre</div>
+            <h1></h1>
+        </div>
+    </div>
+    <div id="myModal2" class="modal2">
+        <div class="modalContent2">
+            <p id="close2"><i class="far fa-window-close fa-lg"></i></p>
+            <form method="post" action="/form" autocomplete="off">
+                <h3>Información de Envio</h3>
+                <div id="wrapper">
+                    <div class="content-wrapper">
+                        <label for="">Nombres</label><br>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="content-wrapper">
+                        <label for="">Apellidos</label><br>
+                        <input type="text" id="apellido" required>
+                    </div>
+                    <div class="content-wrapper">
+                        <label for="">Celular</label><br>
+                        <input type="tel" id="celular" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="content-wrapper">
+                        <label for="">Email</label required><br>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="content-wrapper">
+                        <label for="">Dirección</label>
+                        <input type="text" id="direccion" required>
+
+                    </div>
+                    <div class="content-wrapper">
+                        <label for="">Método de pago</label><br>
+                        <select id="opciones" required>
+                            <option selected>Seleccione opcion</option>
+                            <option value="Datafono">Datafono</option>
+                            <option value="Efectivo">Efectivo</option>
+                        </select>
+                    </div>
+
+                    <div class="content-wrapper">
+                        <label for="">Indicaciones</label><br>
+                        <textarea name="" id="indicaciones" cols="30" rows="2"
+                            placeholder="Casa esquinará azul tocar la primera..." required></textarea>
+                    </div>
+
+                    <div class="content-wrapper">
+                        <button id="guardar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <section class="car">
+        <div class="content-car" id="modalBtn"><i class="fas fa-shopping-cart flex-item fa-lg"></i> </div>
+        <div class="content-car" id="modalBtn2"><i class="fas fa-street-view flex-item fa-lg"></i> </div>
+    </section>
+    <section>
+        <div class="grilla">
+            <div class="menu"><img src="assets/img/ham1.png"></div>
+            <div class="menu-2"><img src="assets/img/ham8.png" alt=""> </div>
+            <div class="menu-3"><img src="assets/img/ham6.png"></div>
+            <div class="menu-4"><img src="assets/img/ham4.png" alt=""></div>
+            <div class="menu-sub">
+                <p class="define">Hamburguesa Amapola</p>
+                <p class="define">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="define space"><span>$20.00</span> - $18.000 </p>
+        <p class="define"><button id="btn_compra"  data-precio="18000">Add to car</button></p>
+          </div>
+
+            <div class="menu-sub">
+                <p style="margin-bottom:30px;" class="define">Hamburguesa 1/2 Libra</p>
+                <p class="define"></p>
+                <p class="define space"><span></span> $19.800 </p>
+                <p class="define"><button id="btn_compra2"  data-precio="19800">Add to car</button></p>
+            </div>
+
+            <div class="menu-sub">
+                <p class="define">Pollo Mexicano</p>
+                <p class="define">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="define space"><span>$58.00</span> - $42.000 </p>
+                <p class="define"><button id="btn_compra3"  data-precio="42000">Add to car</button></p>
+                
+            </div>
+            <div class="menu-sub">
+                <p class="define">Hamburguesa 3/4 Libra</p>
+                <p class="define">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="define space"><span>$60.00</span> - $55.000 </p>
+                <p class="define"><button id="btn_compra4"  data-precio="55000" >Add to car</button></p>
+            </div>
+        </div>
+        <div class="grilla">
+            <div class="menu-5"><img src="assets/img/ham3.png" alt=""></div>
+            <div class="menu-6"> <img src="assets/img/ham2.png" alt=""></div>
+            <div class="menu-7"><img src="assets/img/ham5.png" alt=""></div>
+            <div class="menu-8"><img src="assets/img/ham7.png" alt=""></div>
+
+            <div class="menu-sub">
+                <p class="define">Hamburguesa Casera</p>
+                <p class="define">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="define space"><span>$45.900</span> - $43.000 </p>
+                <p class="define"><button id="btn_compra5"  data-precio="43000" >Add to car</button></p>
+            </div>
+            <div class="menu-sub">
+                <p style="margin-bottom:30px;" class="define">Philadelphia Steak</p>
+                <p class="define"></p>
+                <p class="define space"><span></span> $39.800 </p>
+                <p class="define"><button id="btn_compra6"  data-precio="39800">Add to car</button></p>
+            </div>
+            <div class="menu-sub">
+                <p style="margin-bottom:30px;" class="define">Hamburguesa Criolla</p>
+                <p class="define"></p>
+                <p class="define space"><span></span> $26.700 </p>
+                <p class="define"><button id="btn_compra7"  data-precio="26700">Add to car</button></p>
+            </div>
+            <div class="menu-sub">
+                <p class="define">Combo Para Parchar</p>
+                <p class="define">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="define space"><span>$55.000</span> - $39.900 </p>
+                <p class="define"><button id="btn_compra8"  data-precio="39900">Add to car</button></p>
+            </div>
+        </div>
+    </section>
+<h1 id="Qpidio"></h1>
+<h1 id="Qpidio2"></h1>
+    <button id="mostrar"><i id="eye" style="color:black" class="fas fa-eye fa-2x eye"></i></button>
+    
+    <p id="msg_posit"></p>
+    <p id="pagar"></p>
+    <div id="shipping-data" class="grid_dos">
+        <div class="items">
+            <p id="item8"></p><br>
+            <p id="item1"></p><br>
+            <p id="item2"></p><br>
+            <p id="item3"></p><br>
+        </div>
+        <div class="items">
+            <p id="item4"></p><br>
+            <p id="item5"></p><br>
+            <p id="item6"></p><br>
+            <p id="item7"></p><br>
+            <p id="item9"></p><br>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <script type="" src="assets/js/car.js"></script>
+    <script type="" src="assets/js/pedido.js"></script>
+  
+   
+</body>
+
+</html>

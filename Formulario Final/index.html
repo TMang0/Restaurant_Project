@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form action=""  method="post" class="form">
+        <section class=prueba>
+            <h3 align="center">Formulario de Registro</h3>
+        <Select id="opciones" class="info" required>
+            <option value="">Tipo de Documento</option>
+            <option value="C.C"> C.C</option>
+            <option value="C.E"> C.E</option>
+            <option value="P.E.P">P.E.P</option>
+            <option value="Pasaporte">Pasaporte</option>
+
+            <input type="number" id="documento" value=''  placeholder="Documento" name="Identificacion" class="info" required>
+            <br>
+        </Select>
+    
+        <input type="text" id="nombre" value='' placeholder="Nombre" name="Nombre" class="info">
+        <input type="text" id="apellido" value='' placeholder="Apellido" name="Apellido"class="info">
+        <br>
+        <Input type="date" id="FN" value='' placeholder="Fecha" Name="Nacimiento"class="info"></Input>
+        <input type="email" id="email" value='' placeholder="Correo" name="Correo"  class="info" required>
+        <br>
+        <input type="number" id="telefono" value='' placeholder="Celular" name="Telefono"  class="info">
+        <input type="text" id="direccion" value='' placeholder="Direccion Con Nomenclatura" name="Direccion" class="info">
+        <br>
+        <input type="Password" placeholder="Contraseña" name="Contraseña" required class="info">
+        <input type="Password" placeholder="Repite tu Contraseña" name="Contraseña" required class="info">
+        <hr>
+     <h2 align="center">Medio de Pago Preferido</h2>
+     <div>
+<select id="opciones" class="pagare" required>
+    <option value="">Elige un Metodo de pago</option>
+    <option value="Opcion1" class="Pago">Efectivo</option>
+    <option value="Opcion2" class="Pago">Tarjeta de Debito</option>
+    <option value="Opcion3" class="Pago">Tarjeta de Credito</option>
+    <option value="opcion4" class="Pago"> Bonos Sodexo</option>
+    <option value="opcion5" class="Pago">PSE</option>
+</select>
+     </div>
+</section>
+<hr>
+<br>
+<table>
+<tr>
+    <td><input type="checkbox" name="Autorizo1" class="check" > Autorizo el Tratamiento de mis Datos
+        </td>
+<td><input type="checkbox" name="Autorizo2" class="check"> Estoy de Acuerdo en Recibir Promociones y Descuentos </td>
+</tr>
+</table>
+<hr>
+<div>
+    <button id="guardar" type="submit" class="boton">Enviar Registro</button>
+    <br>
+    </div>
+
+
+    <div id="div_mensaje">
+        <h3>Registro Exitoso</h3>
+    </div>
+
+
+    <button id="mostrar" type="submit" class="boton">Datos Temporales</button>
+    <br>
+
+
+    <div id="div_datos">
+    <button id="obtener" type="submit" class="boton">Obtener Datos</button>
+    <p id="p_nombre"></p>
+    <p id="p_apellido"></p>
+    <p id="p_opciones"></p>
+    <p id="p_documento"></p>
+    <p id="p_email"></p>
+    <p id="p_telefono"></p>
+</div>
+
+    <br>
+    </div>
+
+
+    <button type="reset" class="boton"> Borrar Todo</button>
+</div>
+
+
+    </form>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
