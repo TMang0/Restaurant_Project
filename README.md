@@ -1,5 +1,10 @@
 # Restaurant_Project
-Restaurant project made with HTML / CSS / JS 
-
+Restaurant project
 
 This project was created for the BIT Bootcamp
+
+Technologies used:
+-HTML
+-CSS / Bootstrap
+-JS
+
